@@ -58,7 +58,6 @@ body {
 .description {
     margin:50px auto 10px;
     background:rgb(193, 103, 235, 0.6);
-    padding:20px 50px;;
     border-radius:20px 50px;
 }
 .TOS {
@@ -71,57 +70,28 @@ underlined {
 .content {
     margin:20px auto;
 }
-@media only screen and (min-width:1280px) {
-    .content {
-        width:70%;
-    }
-    .logo h1 {
-        font-size: 90px;
-    }
-    .logo p {
-        font-size: 18px;
-    }
-    .description {
-        width:70%;
-        font-size:22px;
-    }
-    .TOS {
-        font-size:14px;
-    }
+@media only screen and (min-width:1280px) { /* DESKTOP */
+    .content {width:70%;}
+    .logo h1 {font-size: 90px;}
+    .logo p {font-size: 18px;}
+    .description {width:70%;font-size:22px;padding:20px 50px;}
+    .TOS {font-size:14px;}
   }
-@media only screen and (min-width:800px) and (max-width:1280px){
-    .content {
-        width: 80;
-    }
-    .logo h1 {
-        font-size: 70px;
-    }
-    .logo p {
-        font-size:16px;
-    }
-    .description {
-        width:70%;
-        font-size:18px;
-    }
-    .TOS {
-        font-size:12px;
-    }
+@media only screen and (min-width:768px) and (max-width:1280px){ /* TABLET */
+    .content {width: 80;}
+    .logo h1 {font-size: 70px;}
+    .logo p {font-size:16px;}
+    .description {width:70%;font-size:18px;padding:15px 40px;}
+    .TOS {font-size:12px;}
 }
-  @media only screen and (max-width:800px) {
-    .content {
-        width:100%;
-    }
-    .logo h1 {
-        font-size: 50px;
-    }
-    .logo p {
-        font-size: 14px;
-    }
-    .description {
-        width:50%;
-        font-size:14px;
-    }
-    .TOS {
-        font-size: 10px;
-    }
+  @media only screen and (min-width:280px) and (max-width:800px) { /* MOBILE */
+    .content {width:100%;}
+    .logo h1 {font-size: 50px;}
+    .logo p {font-size: 14px;}
+    .description {width:50%;font-size:14px;padding:10px 30px;}
+    .TOS {font-size: 10px;}
+  }
+  @media only screen and (max-width:280px) {
+    .logo h1 {font-size: 40px;}
+    .logo p {font-size: 12px;}
   }
